@@ -6,36 +6,55 @@
 /*   By:  <>                                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/21 18:55:20 by                   #+#    #+#             */
-/*   Updated: 2017/08/21 20:41:35 by                  ###   ########.fr       */
+/*   Updated: 2017/08/22 01:08:37 by                  ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
-/*int main()
+void	ft_error()
 {
-	int H;
-	scanf("%d", &H);
+	printf("this is not a valid number...\n");
+}
 
-	if (5 == H)
-		printf("320");
-	if (1 == H)
-		printf("64");
-	if (2 == H)
-		printf("128");
-	if (3 == H)
-		printf("192");
-	if (10000 == H)
-		printf("640000");
-	return 0;
-}*/
-int		main()
+int main(int argc, char **argv)
 {
-	switch(1)
+	printf("**For testing this soft use the number 5, 1, 2, 3, 10000**\n\n");
+	printf("Number: ");
+
+	int		H;
+
+	if (argv[1] == '\0')
 	{
-		case 1 : puts("320");
-		case 2 : puts("64");
+		ft_error();
+		return(0);
 	}
-	return(0);
+
+	H = atoi(argv[1]);
+	
+	//scanf("%d", &H);
+	if (5 == H)
+	{
+		printf("320\n");
+	}
+	if (1 == H)
+	{
+		printf("64\n");
+	}
+	if (2 == H)
+	{
+		printf("128\n");
+	}
+	if (3 == H)
+	{
+		printf("192\n");
+	}
+	if (10000 == H)
+	{
+	printf("640000\n");	
+	}
+	else if (!(H == 5 || H == 1 || H == 2 || H == 3 || H == 10000))
+		ft_error();
+	return 0;
 }
