@@ -1,0 +1,5 @@
+Credentials cache: API:107FF8C1-7B65-4751-8F8D-F2417C25DBD8
+        Principal: fbeaumon@42.FR
+
+  Issued                Expires               Principal
+Jul  3 16:01:56 2017  Jul 10 16:01:56 2017  krbtgt/42.FR@42.FR
