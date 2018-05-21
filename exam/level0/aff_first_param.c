@@ -13,7 +13,6 @@ char ft_argv_display(char *str)
 
 int	main(int argc, char **argv)
 {
-	argc < 2 ? write(1,"\n", 1) : argc >= 2 ? ft_argv_display(argv[1]) : 
-	argc == 0;
+	argc < 2 ? write(1,"\n", 1) : argc >= 2 ? ft_argv_display(argv[1]) : argc == 0;
 	return(0);
 }
