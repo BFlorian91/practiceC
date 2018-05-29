@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 char ft_argv_display(char *str)
 {
@@ -13,7 +14,13 @@ char ft_argv_display(char *str)
 
 int	main(int argc, char **argv)
 {
-	argc < 2 ? write(1,"\n", 1) : argc >= 2 ? ft_argv_display(argv[1]) : 
+	int i;
+
+	i = 0;
+	while (i < argc)
+		i++;
+
+	argc < 2 ? write(1,"\n", 1) : argc == i ? ft_argv_display(argv[i - 1]) :
 	argc == 0;
 	return(0);
 }
