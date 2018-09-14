@@ -1,0 +1,5 @@
+Credentials cache: API:CAF54DAB-8494-4ADD-8049-658C6864BBB0
+        Principal: flbeaumo@42.FR
+
+  Issued                Expires               Principal
+Jul 30 13:04:25 2018  Aug  6 13:01:40 2018  krbtgt/42.FR@42.FR
